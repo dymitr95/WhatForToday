@@ -1,5 +1,7 @@
+# Ignore build output
 bin/
 obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
+Debug/
+
+# Rider or IntelliJ IDE config
+.idea/
