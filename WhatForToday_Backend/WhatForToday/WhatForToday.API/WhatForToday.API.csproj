@@ -10,4 +10,13 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\WhatForToday.Application\WhatForToday.Application.csproj" />
+      <ProjectReference Include="..\WhatForToday.Infrastructure\WhatForToday.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+    </ItemGroup>
+
 </Project>
