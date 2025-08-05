@@ -1,4 +1,6 @@
+using WhatForToday.Application.Interfaces.Repositories;
 using WhatForToday.Infrastructure.Persistence.Configuration.Services;
+using WhatForToday.Infrastructure.Persistence.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,9 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services.AddPersistence(builder.Configuration);
+
+//Repositories
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

@@ -16,4 +16,8 @@
       <Folder Include="Persistence\Configuration\Entities\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\WhatForToday.Application\WhatForToday.Application.csproj" />
+    </ItemGroup>
+
 </Project>
