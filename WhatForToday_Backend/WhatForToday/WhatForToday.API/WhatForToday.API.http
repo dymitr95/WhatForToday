@@ -1,0 +1,6 @@
+@WhatForToday.API_HostAddress = http://localhost:5261
+
+GET {{WhatForToday.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
